@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #763500;
+}
+
+.container {
+    width: 900px;
+    margin: auto;
+    background-color: rgb(121, 50, 3);
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: rgb(121, 50, 3);
+}
+
+header h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 40px;
+}
+
+header p {
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+nav {
+    background-color: #a6784f;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    flex: 1;
+}
+
+nav a {
+    display: block;
+    padding: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: rgb(71, 49, 34);
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+}
+
+.welcome {
+    text-align: center;
+    padding: 40px;
+    background-color: #864407;
+}
+
+.welcome h2 {
+    color: #ffffff;
+}
+
+.welcome p {
+    color: #ffffff;
+}
+
+.recipes h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+.cards {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background-color: #d6bfae;
+    color: #5a3e36;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #c4a892;
+    color: white;
+}
+
+.featured {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    background-color: #864407;
+}
+
+.featured-text {
+    flex: 1;
+}
+
+.featured-text h2 {
+    color: #ffffff;
+}
+
+.featured-image {
+    flex: 1;
+}
+
+.featured-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #e8d5c4;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 900px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .featured {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        border-bottom: 1px solid white;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .hero img {
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .welcome {
+        padding: 20px;
+    }
+
+    .card {
+        padding: 5px;
+    }
+
+    .button {
+        padding: 8px 12px;
+    }
+
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 120px;
+}
